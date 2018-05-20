@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{06fe270b-7b2a-4886-9524-c89c82e81c83}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e4c4eb15-3f1c-4e87-b051-c6805d8f61d4}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{611e28e2-2bee-401c-a6e9-2248984ed5c4}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="xml">
+      <UniqueIdentifier>{e8ec19e6-e72c-4c2f-8f27-d6fa4db14390}</UniqueIdentifier>
+      <Extensions>xml</Extensions>
+    </Filter>
+    <Filter Include="DuiControlEx">
+      <UniqueIdentifier>{e445223d-7003-49b3-a135-86c97ffbcd23}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\testdemo.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\testdemo.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testdemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiHandlerMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiHandlerFrameView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiHandlerAnalysisMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiHandlerOscilloscope.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiControlEx\MFCDateTime.h">
+      <Filter>DuiControlEx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="testdemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiHandlerMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiHandlerFrameView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiHandlerAnalysisMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiHandlerOscilloscope.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiControlEx\MFCDateTime.cpp">
+      <Filter>DuiControlEx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="testdemo.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\bin\xml\app\tab_FrameView.xml">
+      <Filter>xml</Filter>
+    </Xml>
+    <Xml Include="..\bin\xml\app\tab_AnalysisMachine.xml">
+      <Filter>xml</Filter>
+    </Xml>
+    <Xml Include="..\bin\xml\app\tab_Oscilloscope.xml">
+      <Filter>xml</Filter>
+    </Xml>
+    <Xml Include="..\bin\xml\duivision\dlg_about.xml">
+      <Filter>xml</Filter>
+    </Xml>
+    <Xml Include="..\bin\xml\duivision\dlg_main.xml">
+      <Filter>xml</Filter>
+    </Xml>
+    <Xml Include="..\bin\xml\duivision\dlg_option.xml">
+      <Filter>xml</Filter>
+    </Xml>
+    <Xml Include="..\bin\xml\duivision\menu_main.xml">
+      <Filter>xml</Filter>
+    </Xml>
+    <Xml Include="..\bin\xml\duivision\menu_tray.xml">
+      <Filter>xml</Filter>
+    </Xml>
+    <Xml Include="..\bin\xml\def_string_en-us.xml">
+      <Filter>xml</Filter>
+    </Xml>
+    <Xml Include="..\bin\xml\def_string_zh-cn.xml">
+      <Filter>xml</Filter>
+    </Xml>
+    <Xml Include="..\bin\xml\dlg_msgbox.xml">
+      <Filter>xml</Filter>
+    </Xml>
+    <Xml Include="..\bin\xml\dlg_notifymsg.xml">
+      <Filter>xml</Filter>
+    </Xml>
+    <Xml Include="..\bin\xml\dlg_skin.xml">
+      <Filter>xml</Filter>
+    </Xml>
+    <Xml Include="..\bin\xml\resource.xml">
+      <Filter>xml</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

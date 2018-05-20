@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<div pos="0,75,-0,-0" >
+	<text crtext="000000" crmark="800000" align="center"
+		pos="2,2,102,23" title="帧总览" font="big" show="1" />
+
+	<gridctrl name="gridctrl_header" pos="10,30,-20,-5" show="1"
+		img-scroll="skin:IDB_SCROLL_V" img-scrollh="skin:IDB_SCROLL_H" img-sep="skin:IDB_LINE_RP"
+		image="skin:IDB_LIST_IMG"
+		img-header="skin:IDB_TOOLBAR_BG" img-header-sort="skin:IDB_TREE_COLLAPSE"
+		img-colsep="skin:IDB_TAB_SEPERATOR"
+		
+		left-pos="0" row-height="50" header-height="30" bk-transparent="10"
+		header-check="0"
+		font-title="big" align-header="center" valign-header="middle" crheader="128,32,32"
+		font="default" align="left" valign="middle"
+		crtext="255,64,64,64" crhover="128,0,0" crpush="0,112,235"
+		crtitle="32,32,32" crsep="200,160,160,160" crrowhover="50,128,128,128" crrowcurrent="50,128,128,192"
+		down-row="1" column-sep="1" modify-column-width="1"
+		sort-click="1" >
+		<column title="Fcode_Address" width="150" align="center" />
+		<column title="帧类型" width="100" align="center" />
+		<column title="主帧数量" width="100" align="center" />
+		<column title="未响应数量" width="100" align="center" />
+		<column title="帧周期" width="100" align="center" />
+
+        <row>
+		   <item title="123"/>
+		   <item title="abc"/>
+		   <item title="100"/>
+		   <item title="0"/>
+		   <item title="50"/>
+		</row>
+
+        <row>
+		   <item title="456"/>
+		   <item title="def"/>
+		   <item title="80"/>
+		   <item title="20"/>
+		   <item title="60"/>
+		</row>
+		
+		<row>
+		   <item title="789"/>
+		   <item title="ghi"/>
+		   <item title="90"/>
+		   <item title="10"/>
+		   <item title="70"/>
+		</row>
+		
+		        <row>
+		   <item title="123"/>
+		   <item title="abc"/>
+		   <item title="100"/>
+		   <item title="0"/>
+		   <item title="50"/>
+		</row>
+
+        <row>
+		   <item title="456"/>
+		   <item title="def"/>
+		   <item title="80"/>
+		   <item title="20"/>
+		   <item title="60"/>
+		</row>
+		
+	</gridctrl>
+	
+	<button pos="600,30,700,60" skin="IDB_BT_DEFAULT" title="接收" />
+	<button pos="710,30,810,60" skin="IDB_BT_DEFAULT" title="停止" />
+	<button pos="600,70,700,100" skin="IDB_BT_DEFAULT" title="保存" />
+	<button pos="710,70,810,100" skin="IDB_BT_DEFAULT" title="导出" />
+	
+	<text pos="600,110,800,140" crtext="000000" font="big" crtext="000000" title="报文数目统计（仅含主帧）："/>
+	<text pos="600,140,700,180" crtext="000000" font="default" title="过程数据"/> 
+	<edit name="edit1" skin="IDB_EDIT" pos="690,130,790,160" font="default" crtip="128,128,128,128" />
+	<text pos="600,170,700,210" crtext="000000" title="消息数据"/>
+	<edit name="edit2" skin="IDB_EDIT" pos="690,160,790,190" font="default" crtip="128,128,128,128" />
+	<text pos="600,200,700,240" crtext="000000" title="监视数据"/>
+	<edit name="edit3" skin="IDB_EDIT" pos="690,190,790,220" font="default" crtip="128,128,128,128" />
+
+	<text pos="600,230,700,270" font="big" crtext="000000" title="其它信息："/>
+	<text pos="600,260,700,300" crtext="000000" title="网络占用率"/>
+	<edit name="edit4" skin="IDB_EDIT" pos="690,250,790,280" font="default" crtip="128,128,128,128" />
+	<text pos="600,290,700,310" crtext="000000" title="帧头异常数目"/>
+	<edit name="edit5" skin="IDB_EDIT" pos="690,280,790,310" font="default" crtip="128,128,128,128" />
+	<text pos="600,320,700,360" crtext="000000" title="CRC异常数目"/>
+	<edit name="edit6" skin="IDB_EDIT" pos="690,310,790,340" font="default" crtip="128,128,128,128" />
+	<text pos="600,350,700,390" crtext="000000" title="帧尾异常数目"/>
+	<edit name="edit6" skin="IDB_EDIT" pos="690,340,790,370" font="default" crtip="128,128,128,128" />
+</div>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<div pos="0,75,-0,-0">
+	
+<text crtext="000000" crmark="800000" align="center"
+		pos="2,2,102,23" title="总帧数：100" font="big" show="1" />
+<text crtext="000000" crmark="800000" align="center"
+		pos="104,2,204,23" title="显示帧数：9" font="big" show="1" />
+
+	<gridctrl name="gridctrl_header" pos="10,30,-170,-5" show="1"
+		img-scroll="skin:IDB_SCROLL_V" img-scrollh="skin:IDB_SCROLL_H" img-sep="skin:IDB_LINE_RP"
+		image="skin:IDB_LIST_IMG"
+		img-header="skin:IDB_TOOLBAR_BG" img-header-sort="skin:IDB_TREE_COLLAPSE"
+		img-colsep="skin:IDB_TAB_SEPERATOR"
+		
+		left-pos="0" row-height="50" header-height="30" bk-transparent="10"
+		header-check="0"
+		font-title="big" align-header="center" valign-header="middle" crheader="128,32,32"
+		font="default" align="left" valign="middle"
+		crtext="255,64,64,64" crhover="128,0,0" crpush="0,112,235"
+		crtitle="32,32,32" crsep="200,160,160,160" crrowhover="50,128,128,128" crrowcurrent="50,128,128,192"
+		down-row="1" column-sep="1" modify-column-width="1"
+		sort-click="1" >
+		<column title="序号" width="50" align="center" />
+		<column title="时间戳" width="140" align="center" />
+		<column title="时间差" width="60" align="center" />
+		<column title="源地址" width="100" align="center" />
+		<column title="宿地址" width="100" align="center" />
+		<column title="协议" width="50" align="center" />
+		<column title="长度" width="50" align="center" />
+		<column title="数据" width="150" align="center" />
+        <row image="">
+		   <item title="1" align="left"/>
+		   <item title="2018-5-19 8:00:00"/>
+		   <item title="20"/>
+		   <item title="192.168.2.10"/>
+		   <item title="192.168.3.10"/>
+		   <item title="HTTP"/>
+		   <item title="20"/>
+		   <item title="00000000000000000000"/>
+		</row>
+
+		<row image="">
+		   <item title="2" align="left"/>
+		   <item title="2018-5-20 8:00:00"/>
+		   <item title="30"/>
+		   <item title="192.168.2.10"/>
+		   <item title="192.168.3.10"/>
+		   <item title="SMTP"/>
+		   <item title="20"/>
+		   <item title="11111111111111111111"/>
+		</row>
+	
+		<row image="">
+		   <item title="3" align="left"/>
+		   <item title="2018-5-20 8:00:00"/>
+		   <item title="30"/>
+		   <item title="192.168.2.10"/>
+		   <item title="192.168.3.10"/>
+		   <item title="SMTP"/>
+		   <item title="20"/>
+		   <item title="11111111111111111111"/>
+		</row>
+        <row image="">
+		   <item title="4" align="left"/>
+		   <item title="2018-5-19 8:00:00"/>
+		   <item title="20"/>
+		   <item title="192.168.2.10"/>
+		   <item title="192.168.3.10"/>
+		   <item title="HTTP"/>
+		   <item title="20"/>
+		   <item title="00000000000000000000"/>
+		</row>
+
+		<row image="">
+		   <item title="5" align="left"/>
+		   <item title="2018-5-20 8:00:00"/>
+		   <item title="30"/>
+		   <item title="192.168.2.10"/>
+		   <item title="192.168.3.10"/>
+		   <item title="SMTP"/>
+		   <item title="20"/>
+		   <item title="11111111111111111111"/>
+		</row>
+	
+		<row image="">
+		   <item title="6" align="left"/>
+		   <item title="2018-5-20 8:00:00"/>
+		   <item title="30"/>
+		   <item title="192.168.2.10"/>
+		   <item title="192.168.3.10"/>
+		   <item title="SMTP"/>
+		   <item title="20"/>
+		   <item title="11111111111111111111"/>
+		</row>
+		
+        <row image="">
+		   <item title="7" align="left"/>
+		   <item title="2018-5-19 8:00:00"/>
+		   <item title="20"/>
+		   <item title="192.168.2.10"/>
+		   <item title="192.168.3.10"/>
+		   <item title="HTTP"/>
+		   <item title="20"/>
+		   <item title="00000000000000000000"/>
+		</row>
+
+		<row image="">
+		   <item title="8" align="left"/>
+		   <item title="2018-5-20 8:00:00"/>
+		   <item title="30"/>
+		   <item title="192.168.2.10"/>
+		   <item title="192.168.3.10"/>
+		   <item title="SMTP"/>
+		   <item title="20"/>
+		   <item title="11111111111111111111"/>
+		</row>
+	
+		<row image="">
+		   <item title="9" align="left"/>
+		   <item title="2018-5-20 8:00:00"/>
+		   <item title="30"/>
+		   <item title="192.168.2.10"/>
+		   <item title="192.168.3.10"/>
+		   <item title="SMTP"/>
+		   <item title="20"/>
+		   <item title="11111111111111111111"/>
+		</row>
+		
+	</gridctrl>
+	
+	<button pos="750,30,830,60" skin="IDB_BT_DEFAULT" title="接收" />
+	<button pos="750,63,830,93" skin="IDB_BT_DEFAULT" title="停止" />
+	<button pos="750,96,830,126" skin="IDB_BT_DEFAULT" title="导出当前页" />	
+
+	<chkbtn name="checkbutton1" skin="IDB_CHECK_BOX" pos="750,157,850,182" show="1" title="采集完存库" check="true" shortcut="CTRL+2" />
+	<chkbtn name="checkbutton1" skin="IDB_CHECK_BOX" pos="750,187,850,212" show="1" title="滚动刷新" check="true" shortcut="CTRL+3" />
+  
+</div>

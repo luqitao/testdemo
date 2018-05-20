@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dlg name="dlg_main" title="[APP_NAME]" width="900" height="600" translucent="255"
+	frame="skin:IDB_MAIN_FRAME" bkimg="" crbk="000000" appwin="1" resize="1"
+	width-lt="3" height-lt="119" width-rb="3" height-rb="30" >
+
+  <base>
+	<imgbtn name="button.close" pos="-45,0,-0,29" skin="IDB_BT_CLOSE" tip="关闭" action="close-window" show="1"/>
+	<imgbtn name="button.min" pos="-76,0,-46,29" skin="IDB_BT_MIN" tip="最小化" />
+	<imgbtn name="button.menu" pos="-110,0,-77,29" skin="IDB_BT_MENU" tip="菜单" action="menu:menu_main" menupos="-75,-0" />
+	<imgbtn name="button.skin" pos="-140,0,-111,29" skin="IDB_BT_SKIN" tip="皮肤" show="0"/>
+	<text name="title" crtext="FFFFFF" crmark="800000" crshadow="808080" font="big"
+			pos="10,4,250,25" title="[APP_NAME]" response="0" show="1" />
+  </base>
+  
+  <body>
+    <div pos="0,30,-0,-0">
+	<text pos="10,15,130,60" crtext="FFFFFF" font="normal" fontwidth="16" title="设备ip地址：" />
+
+	<edit name="ip_addr"
+							pos="10,40" width="140" height="28" title="192.168.1.100"
+							crback="255,255,255,255"
+							multiline="0" autohscroll="1" autovscroll="0" number="0" readonly="0" maxchar="50"
+							font="big"
+							duimsg="focuschange" />
+	<!--<rect pos="9,14,131,61" response="0" color="808080" />
+	<nativewnd name="nativewnd_1" skin="IDB_BT_DEFAULT" title="原生ip地址控件"
+					pos="10,15,130,60" tip="原生ip地址控件" /> -->
+    
+	<button name="btnconnect" pos="160,2,230,72" skin="IDB_BT_DEFAULT" img-btn="skins\icon\connect_x.png" cursor="hand"
+				title="连接" tip="与xx设备建立连接" animate="0" maxindex="4" />
+	<button name="btndisconnect" pos="232,2,302,72" skin="IDB_BT_DEFAULT" img-btn="skins\icon\disconnect_x.png" cursor="hand"
+				title="断开" tip="断开与xx设备的连接" animate="0" maxindex="4" disable="1"/>
+
+
+	<button pos="304,2,374,72" skin="IDB_BT_DEFAULT" img-btn="skins\icon\upgrade_x.png" cursor="hand"
+				title="固件升级" tip="升级硬件固件版本" animate="0" maxindex="4" />
+	<button pos="376,2,446,72" skin="IDB_BT_DEFAULT" img-btn="skins\icon\downgrade_x.png" cursor="hand"
+				title="下载固件" tip="下载硬件固件到本地" animate="0" maxindex="4" />
+	
+	<tabctrl name="tabctrl.main" image="skins\tab_image.png" img-count="3"
+			img-sep="" img-hover="skin:IDB_TAB_HOVER"
+			font="bold" item-width="0" tab-height="0" animate="1"
+			pos="5,86,-1,-31">
+		<tab name="tab.FrameView" title="帧总览" image="skins\icon\duivision.png" img-count="1"
+			div="tab_FrameView" active="true" >
+			
+		</tab>
+		<tab name="tab.AnalysisMachine" title="分析仪" image="skins\icon\app.png" img-count="1"
+			div="tab_AnalysisMachine" >
+			
+		</tab>
+		<tab name="tab.Oscilloscope" title="示波器" image="skins\icon\ico_message.png" img-count="1"
+			div="tab_Oscilloscope" show="0">
+			
+		</tab>
+	</tabctrl>
+	</div>
+	<div name="footer" pos="0,-26,-0,-0" >	
+		<!--<hidebtn name="checkversion" pos="10,2,150,-0" show="1" text="版本：1.0.0.1" title="检查更新"
+				action="link:http://url" />-->
+        <text pos="10,2,150,-0" crtext="808080" title="吞吐量：0.0KB/S" />
+        <text pos="160,2,300,-0" crtext="808080" title="状态：未连接" />
+        <text pos="310,2,450,-0" crtext="808080" title="固件版本：V2.1.3" />
+        <text pos="-120,-25,-0,-0" crtext="808080" title="软件版本：V1.0.0" tip="普通文字，左对齐"/>
+	</div>	
+	
+  </body>
+  
+</dlg>
